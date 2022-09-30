@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:black;
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color:black;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px ;
+    color: black;
+    background-color: greenyellow;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+}
+
+/*============================= Header Section===============================*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: #d4d4d4ea;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6);
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+}
+#navbar{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    transition: 0.3s ease;
+}
+.logo{
+    width: 140px;
+    height: 70px;
+
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(22, 153, 22);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: " ";
+    width: 50%;
+    height: 2px;
+    background: green;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+
+}
+
+/*====================================== Main Section========================*/
+#main{
+     background-image: url(images/back4.webp),linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7));
+    height: 95vh;
+    width: 88%;
+    background-size:cover;
+    background-position: top 55% right 0;
+    
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.6); 
+}
+#main h4 {
+    margin-top: -150px;
+    padding-bottom: 15px;
+    margin-bottom: 100px;
+}
+#main h1{
+    margin-top: -10px;
+    color: green;
+}#main h2{
+    margin-top: -90px;
+}
+#main button{
+    
+    background-color:green;
+    color:black;
+    border: 0;
+    padding: 14px 70px 14px 65px;
+    border-radius: 30px;
+    cursor: pointer;
+ 
+}
+
+/*================================Feature section=============================*/
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid rgb(197, 193, 193);
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: white;
+}
+#feature .fe-box:hover{
+   
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.6); 
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    background-color: rgb(110, 210, 228);
+    font-weight: 800;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: rgb(211, 89, 180);
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgb(89, 211, 105);
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgb(89, 132, 211);
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: rgb(168, 48, 192);
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: rgb(199, 102, 38);
+}
+
+
+
+/*==================================products section==============================*/
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+   
+    margin: 40px;
+}
+#product1 p{
+    font-size: 25px;
+}
+#product1 .pro{
+    width: 12%;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid rgb(219, 212, 212);
+    border-radius: 25px;
+    cursor: pointer;
+  
+    margin: 15px 0;
+    background: rgb(241, 238, 238);
+    position: relative;
+}
+#product1 .pro img{
+    width: 100px;
+    border-radius: 20px;
+   
+}
+#product1 .pro:hover{
+    
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.6);
+}
+#product1 .pro .des{
+    text-align:left;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+#product1 .pro .des span{
+    color: gray;
+    font: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: rgb(4, 6, 39);
+    font-size: 16px;
+}
+#product1 .pro .des i{
+    font-size: 13px;
+    color: yellow;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: darkblue;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(75, 121, 75);
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/*===============================advertisement sectiom==========================*/
+
+#ad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/background2.webp);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position:center;
+    box-sizing: border-box;
+    box-shadow: 10px 20px 54px rgba(70,62,221,0.6);
+}
+#ad h4{
+    color:lightslategray;
+    font-size: 16px;
+}
+#ad h2{
+    color: black;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#ad h2 span{
+    color: red;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#ad button:hover{
+    background-color: black;
+    color: white;
+} 
+
+
+
